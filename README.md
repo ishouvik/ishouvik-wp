@@ -9,7 +9,7 @@ I would personally recommend you to create your own Child themes to give your wo
 ## To Do
 
 * Tidy up the codes
-* Add support for custom logo from the theme customize option
+* Add logo upload option
 
 
 ## Contact Me
