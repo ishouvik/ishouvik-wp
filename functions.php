@@ -423,3 +423,16 @@ function is_social( $param = false ) {
 
     }
 }
+
+/*
+ * Logo
+*/
+
+function is_logo() {
+    $logo_img = get_theme_mod('is_logo');
+    if ( !empty($logo_img) ) {
+        echo '<img src="' . $logo_img . '" class="img-responsive" />';
+    } else {
+        echo bloginfo('name');
+    }
+}
