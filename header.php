@@ -39,19 +39,7 @@
                 <a class="navbar-brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
                     <?php is_logo(); ?></a>
 
-                <?php
-                    // Display primary navigation
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'primary',
-                            'container' => 'div',
-                            'container_class' => 'collapse navbar-collapse col-md-12',
-                            'container_id' => 'ishouvik-navbar-collapse-primary',
-                            'menu_class' => 'nav navbar-nav',
-                            'depth' => 2,
-                            'walker' => new Bootstrapwp_Walker_Nav_Menu()
-                        )
-                    ); ?>
+                    <?php ishouvik_nav_menu('primary'); // Display primary navigation ?>
 
                     <?php get_search_form(); ?>
 

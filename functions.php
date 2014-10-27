@@ -373,6 +373,26 @@ function ishouvikwp_wp_title($title, $sep)
 add_filter('wp_title', 'ishouvikwp_wp_title', 10, 2);
 
 /*
+ * Menus
+*/
+
+function ishouvik_nav_menu($theme_location) {
+
+    wp_nav_menu(
+        array(
+            'theme_location' => $theme_location,
+            'container' => 'div',
+            'container_class' => 'collapse navbar-collapse col-md-12',
+            'container_id' => 'ishouvik-navbar-collapse-primary',
+            'menu_class' => 'nav navbar-nav',
+            'depth' => 2,
+            'walker' => new wp_bootstrap_navwalker(),
+            'fallback_cb' => 'false'
+        )
+    );
+}
+
+/*
  * Numbered Pagination
 */
 function ishouvik_pagination() {
