@@ -7,6 +7,7 @@
  */
 get_header(); ?>
 
+<div class="container">
   <div class="jumbotron">
     <center>
       <h1>404 Not Found!</h1>
@@ -22,7 +23,7 @@ get_header(); ?>
         <a target="blank" href="<?php is_social('gp') ?>"><i class="fa fa-google-plus fa-2x"></i></a>
       </p>
     </center>
-
-  </div>  
+  </div>
+</div>
     
 <?php get_footer();

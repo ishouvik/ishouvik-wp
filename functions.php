@@ -288,21 +288,6 @@ add_filter('body_class', 'ishouvikwp_body_classes');
 
 
 /**
- * Add post ID attribute to image attachment pages prev/next navigation.
- *
- */
-function ishouvikwp_enhanced_image_navigation($url)
-{
-    global $post;
-    if (wp_attachment_is_image($post->ID)) {
-        $url = $url . '#main';
-    }
-    return $url;
-}
-add_filter('attachment_link', 'ishouvikwp_enhanced_image_navigation');
-
-
-/**
  * Checks if a post thumbnails is already defined.
  *
  */

@@ -9,21 +9,23 @@
 get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 
-    <header class="page-title">
-        <h1><?php the_title();?></h1>
-    </header>
+<div class="container">
+  <header class="page-title">
+      <h1><?php the_title();?></h1>
+  </header>
 
-    <div class="clearfix">
-        <?php the_content(); ?>
-    </div>
+  <div class="clearfix">
+      <?php the_content(); ?>
+  </div>
 
-    <footer>
-       <p>
-           <?php edit_post_link(__('Edit', 'ishouvikwp') ); ?>
-       </p> 
-    </footer>
+  <footer>
+     <p>
+         <?php edit_post_link(__('Edit', 'ishouvikwp') ); ?>
+     </p> 
+  </footer>
 
-    <?php comments_template(); ?>
+  <?php comments_template(); ?>
+</div>
 
 <?php endwhile; // end of the loop. ?>
 
