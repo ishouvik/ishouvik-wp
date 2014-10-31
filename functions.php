@@ -55,7 +55,7 @@ function ishouvikwp_images() {
     set_post_thumbnail_size(260, 180); // 260px wide x 180px high
     add_image_size('bootstrap-small', 300, 200); // 300px wide x 200px high
     add_image_size('bootstrap-medium', 360, 270); // 360px wide by 270px high
-    add_image_size('ishouvik-single', 725, 270); // 725px wide by 270px high
+    add_image_size('ishouvik-single', 7e25, 270); // 725px wide by 270px high
 }
 
 /**
@@ -381,31 +381,38 @@ function ishouvik_nav_menu($theme_location) {
  * Numbered Pagination
 */
 function ishouvik_pagination() {
-    $prev_arrow = is_rtl() ? '&rarr;' : '&larr;';
-    $next_arrow = is_rtl() ? '&larr;' : '&rarr;';
-    
     global $wp_query;
-    $total = $wp_query->max_num_pages;
-    $big = 999999999; // need an unlikely integer
-    if( $total > 1 )  {
-         if( !$current_page = get_query_var('paged') )
-             $current_page = 1;
-         if( get_option('permalink_structure') ) {
-             $format = 'page/%#%/';
-         } else {
-             $format = '&paged=%#%';
-         }
-        echo paginate_links(array(
-            'base'          => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-            'format'        => $format,
-            'current'       => max( 1, get_query_var('paged') ),
-            'total'         => $total,
-            'mid_size'      => 3,
-            'type'          => 'list',
-            'prev_text'     => $prev_arrow,
-            'next_text'     => $next_arrow,
-         ) );
-    }
+
+    // Don't print empty markup if there's only one page.
+    if ( $wp_query->max_num_pages < 2 )
+        return;
+    ?>
+    <div class="container">
+        <nav>
+            <ul class="pager">
+                <?php if ( get_next_posts_link() ) : ?>
+                    <li class="previous">
+                        <?php next_posts_link( __( '&larr; Older posts' ) ); ?>
+                    </li>
+                <?php else: ?>
+                    <li class="previous disabled">
+                        <a href="#">&larr; Older posts</a>
+                    </li>
+                <?php endif; ?>
+
+                <?php if ( get_previous_posts_link() ) : ?>
+                    <li class="next">
+                        <?php previous_posts_link( __( 'Newer posts &rarr;' ) ); ?>
+                    </li>
+                <?php else: ?>
+                    <li class="next disabled">
+                    <a href="#">Newer posts &rarr;</a>
+                    </li>
+                <?php endif; ?>
+            </ul>
+        </nav>
+    </div>
+    <?php
 }
 
 /*
