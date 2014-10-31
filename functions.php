@@ -260,7 +260,7 @@ endif;
 if (!function_exists('ishouvikwp_posted_on')) :
     function ishouvikwp_posted_on()
     {
-        printf(__('Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>','ishouvikwp'),
+        printf(__('<i class="fa fa-clock-o"></i> Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>','ishouvikwp'),
             esc_url(get_permalink()),
             esc_attr(get_the_time()),
             esc_attr(get_the_date('c')),
@@ -269,6 +269,15 @@ if (!function_exists('ishouvikwp_posted_on')) :
             esc_attr(sprintf(__('View all posts by %s', 'ishouvikwp'), get_the_author())),
             esc_html(get_the_author())
         );
+    }
+endif;
+
+if ( !function_exists(('ishouvik_categories_in'))  ):
+    function ishouvik_categories_in() {
+        $categories_list = get_the_category_list( __( ', ', 'ishouvikwp' ) );
+        if ( $categories_list ) {
+            echo '<i class="fa fa-folder-open"></i> ' . $categories_list;
+        }
     }
 endif;
 

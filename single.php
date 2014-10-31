@@ -14,7 +14,7 @@ get_header(); ?>
             <?php while (have_posts()) : the_post(); ?>
                 <header>
                     <h1><?php the_title();?></h1>
-                    <p class="meta"><?php echo ishouvikwp_posted_on();?></p>
+                    <p class="meta"><?php echo ishouvikwp_posted_on();?> | <?php echo ishouvik_categories_in(); ?></p>
                 </header>
                 <?php if ( has_post_thumbnail() ): ?>
                     <center>
@@ -24,7 +24,7 @@ get_header(); ?>
                     </center>
                 <?php endif; ?>
                 <?php the_content(); ?>
-                <?php the_tags('<p>Tags: ', ', ', '</p>'); ?>
+                 <?php the_tags('<p><i class="fa fa-tags"></i> Tags: ', ', ', '</p>'); ?>
             <?php endwhile; ?>
 
             <hr/>
