@@ -454,6 +454,6 @@ function is_logo() {
     if ( !empty($logo_img) ) {
         echo '<img src="' . $logo_img . '" class="img-responsive" />';
     } else {
-        echo bloginfo('name');
+        echo "<h1>" . bloginfo('name') . "</h1>";
     }
 }
