@@ -396,31 +396,29 @@ function ishouvik_pagination() {
     if ( $wp_query->max_num_pages < 2 )
         return;
     ?>
-    <div class="container">
-        <nav>
-            <ul class="pager">
-                <?php if ( get_next_posts_link() ) : ?>
-                    <li class="previous">
-                        <?php next_posts_link( __( '&larr; Older posts' ) ); ?>
-                    </li>
-                <?php else: ?>
-                    <li class="previous disabled">
-                        <a href="#">&larr; Older posts</a>
-                    </li>
-                <?php endif; ?>
+    <nav>
+        <ul class="pager">
+            <?php if ( get_next_posts_link() ) : ?>
+                <li class="previous">
+                    <?php next_posts_link( __( '&larr; Older posts' ) ); ?>
+                </li>
+            <?php else: ?>
+                <li class="previous disabled">
+                    <a href="#">&larr; Older posts</a>
+                </li>
+            <?php endif; ?>
 
-                <?php if ( get_previous_posts_link() ) : ?>
-                    <li class="next">
-                        <?php previous_posts_link( __( 'Newer posts &rarr;' ) ); ?>
-                    </li>
-                <?php else: ?>
-                    <li class="next disabled">
-                    <a href="#">Newer posts &rarr;</a>
-                    </li>
-                <?php endif; ?>
-            </ul>
-        </nav>
-    </div>
+            <?php if ( get_previous_posts_link() ) : ?>
+                <li class="next">
+                    <?php previous_posts_link( __( 'Newer posts &rarr;' ) ); ?>
+                </li>
+            <?php else: ?>
+                <li class="next disabled">
+                <a href="#">Newer posts &rarr;</a>
+                </li>
+            <?php endif; ?>
+        </ul>
+    </nav>
     <?php
 }
 

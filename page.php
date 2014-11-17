@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Default Page
  * Description: Page template with a content container and right sidebar.
  *
  * @package WordPress
