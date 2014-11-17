@@ -376,7 +376,7 @@ function ishouvik_nav_menu($theme_location) {
         array(
             'theme_location' => $theme_location,
             'container' => 'div',
-            'container_class' => 'collapse navbar-collapse col-md-12',
+            'container_class' => 'collapse navbar-collapse',
             'container_id' => 'ishouvik-navbar-collapse-primary',
             'menu_class' => 'nav navbar-nav',
             'depth' => 2,
