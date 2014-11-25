@@ -4,8 +4,9 @@ Theme URI: http://ishouvik.com
 Author: Shouvik Mukherjee
 Author URI: http://ishouvik.com
 Description: A semantic HTML/CSS framework base theme for WordPress Developers ported from Twitter Bootstrap
-Version: 1.5
+Version: 1.6
 GitHub Theme URI: ishouvik/ishouvik-wp
+GitHub Branch: master
 =======
 License: GNU General Public License, version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -54,7 +55,7 @@ img.img-article-single {
 }
 
 /* Footer */
-footer.site-footer {
+.site-footer {
 	margin: 0;
 	padding: 15px;
 	min-height: 200px;

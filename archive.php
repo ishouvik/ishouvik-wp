@@ -8,7 +8,7 @@
 get_header(); ?>
 <div class="container">
 	<div class="clearfix">
-	    <div class="col-md-8">
+	    <div class="col-md-8 site-main-content">
 	        <?php if (have_posts()): ?>
 	        	<header class="well">
 	        		<h1 class="archive-title">
@@ -30,7 +30,7 @@ get_header(); ?>
 		        <?php endwhile; ?>
 	        <?php endif; ?>
 	    </div>
-	    <div class="col-md-4 hidden-xs">
+	    <div class="col-md-4 hidden-xs site-sidebar">
 	        <?php get_sidebar('blog'); ?>
 	    </div>
 	</div>

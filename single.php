@@ -10,7 +10,7 @@ get_header(); ?>
 
 <div class="container">
     <div class="clearfix">
-        <div class="col-md-8">
+        <div class="col-md-8 site-main-content">
             <?php while (have_posts()) : the_post(); ?>
                 <header>
                     <h1><?php the_title();?></h1>
@@ -32,7 +32,7 @@ get_header(); ?>
             <?php comments_template(); ?>
             <?php ishouvikwp_content_nav('nav-below'); ?>
         </div>
-        <div class="col-md-4 hidden-xs">
+        <div class="col-md-4 hidden-xs site-sidebar">
             <?php get_sidebar('blog'); ?>
         </div>
     </div>

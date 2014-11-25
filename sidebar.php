@@ -9,7 +9,7 @@
 <div class="clearfix">
     <?php
     if (function_exists('dynamic_sidebar')) {
-        dynamic_sidebar("sidebar-page");
+        dynamic_sidebar("sidebar-pages");
     }
     ?>
 </div>

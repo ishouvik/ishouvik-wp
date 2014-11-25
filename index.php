@@ -7,7 +7,7 @@
  */
 get_header(); ?>
 
-<div class="container">
+<div class="container site-main-content">
 	<div class="clearfix">
 	    <div class="col-md-8">
 	        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
