@@ -7,7 +7,7 @@
  */
 get_header(); ?>
 
-<div class="container">
+<div class="container site-container">
     <div class="well">
         <header class="post-title">
             <h1><?php printf( __('Search Results for: %s', 'ishouvikwp'),'<span>' . get_search_query() . '</span>'); ?></h1>

@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 
-<div class="container clearfix">
+<div class="container clearfix site-container">
   <div class="col-md-8 site-main-content">
     <?php while (have_posts()) : the_post(); ?>
       <header class="page-title">

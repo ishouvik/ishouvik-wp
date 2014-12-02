@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 1.7 - 2014 - 12 - 2
+- Added 'site-container' class for all pages
+
 ## 1.6 - 2014 - 11 - 25
 ### ADDED 
 - CHANGELOG

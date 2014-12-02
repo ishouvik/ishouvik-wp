@@ -7,7 +7,7 @@
  */
 get_header(); ?>
 
-<div class="container">
+<div class="container site-container">
     <div class="well">
         <h1 class="page-title author"><?php printf(
             __('Articles by %s', 'ishouvikwp'),

@@ -2,7 +2,7 @@
 /**
  * iShouvik WP Theme Functions
  *
- * @author Shouvik Mukherjee <rachel@ishouvik.me>
+ * @author Shouvik Mukherjee <contact@ishouvik.com>
  * @package WordPress
  * @subpackage iShouvik WP
  */
