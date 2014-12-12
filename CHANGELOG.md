@@ -11,10 +11,12 @@ All notable changes to this project will be documented in this file.
 - WP Default CSS Classes
 - Common Sidebar widget area along with pages/posts sidebar widget area
 - Email, GitHub and RSS Link theme customization fields
+
 ### BUGFIX
 - Primary Navigation alignment for mobile devices
 - Bugfux: Large feaetured image for single pages
 - Search Form alignment
+
 ### DEPRECATED
 - content-socialprofiles -- Use content-contact_options instead
 
