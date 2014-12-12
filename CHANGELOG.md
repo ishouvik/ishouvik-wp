@@ -1,6 +1,23 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.0 - 2014 - 12 - 13
+### ADDED
+- Better default layout
+- Custom Excerpt
+- Twitter Bootstrap Classes to all form fields
+- Prettier default comments
+- Support for Jetpack Responsive Videos
+- WP Default CSS Classes
+- Common Sidebar widget area along with pages/posts sidebar widget area
+- Email, GitHub and RSS Link theme customization fields
+### BUGFIX
+- Primary Navigation alignment for mobile devices
+- Bugfux: Large feaetured image for single pages
+- Search Form alignment
+### DEPRECATED
+- content-socialprofiles -- Use content-contact_options instead
+
 ## 1.7 - 2014 - 12 - 2
 - Added 'site-container' class for all pages
 

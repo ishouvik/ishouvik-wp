@@ -8,29 +8,34 @@ I would personally recommend you to create your own Child themes to give your wo
 
 
 ## Installation
-* Clone this Git repo inside your wp-content/themes directory
-* Activate the theme from wp admin panel
-* Use GitHub updater plugin for auto-update from Github: https://github.com/afragen/github-updater
- 
+- Clone this Git repo inside your wp-content/themes directory
+- Activate the theme from wp admin panel
+- Use GitHub updater plugin for auto-update from Github: https://github.com/afragen/github-updater
+
+
+## Troubleshoot
+If the new 'customize' do not appear on the site after saving please perform the following procedure --
+- Save site permalinks again.
+- Make some changes to the 'customize' page and save the changes again. 
+
 
 ## Contact Me
-* Website: <a href="http://ishouvik.com">ishouvik.com</a>
-* Mail me: <a href="mailto:contact@ishouvik.com">contact@ishouvik.com</a>
-* Twitter: <a href="https://twitter.com/ishouvik">@ishouvik</a>
-* Facebook: <a href="https://www.facebook.com/shouvikmukherjee">facebook.com/shouvikmukherjee</a>
-* Google+: <a href="https://plus.google.com/+ShouvikMukherjee-ishouvik/">+ShouvikMukherjee-ishouvik</a>
+- Website: <a href="http://ishouvik.com">ishouvik.com</a>
+- Mail me: <a href="mailto:contact@ishouvik.com">contact@ishouvik.com</a>
+- Twitter: <a href="https://twitter.com/ishouvik">@ishouvik</a>
+- Facebook: <a href="https://www.facebook.com/shouvikmukherjee">facebook.com/shouvikmukherjee</a>
+- Google+: <a href="https://plus.google.com/+ShouvikMukherjee-ishouvik/">+ShouvikMukherjee-ishouvik</a>
 
 
 ## Credits:
-
-* Twitter Bootstrap Team and its contributors
-* Fontawesome Team and its contributors
-* Inspired by the effort by Mark Motto (https://twitter.com/mdo)
+- Twitter Bootstrap Team and its contributors
+- Fontawesome Team and its contributors
+- Inspired by the effort by Mark Motto (https://twitter.com/mdo)
 
 
 ## To Do
-* Tidy up the codes
-* Add logo upload option
+- Logo upload
+- Header background image upload
 
 
 ## License:

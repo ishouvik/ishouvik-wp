@@ -33,11 +33,10 @@ if (!function_exists('ishouvikwp_theme_setup')):
 
         add_theme_support('automatic-feed-links');
         add_theme_support('post-thumbnails');
-        add_theme_support('post-formats', array( 'aside', 'image', 'gallery', 'link', 'quote', 'status', 'video', 'audio', 'chat' ));
         add_theme_support( 'html5', array( 'search-form' ) );
 
         // This theme uses wp_nav_menu() in one location.
-            register_nav_menu( 'primary', __( 'Navigation Menu', 'ishouvikwp' ) );
+        register_nav_menu( 'primary', __( 'Navigation Menu', 'ishouvikwp' ) );
 
         // load custom walker menu class file
         require 'includes/class-ishouvikwp_walker_nav_menu.php';
@@ -47,15 +46,11 @@ add_action('after_setup_theme', 'ishouvikwp_theme_setup');
 
 /**
  * Define post thumbnail size.
- * Add two additional image sizes.
  *
  */
 function ishouvikwp_images() {
 
     set_post_thumbnail_size(260, 180); // 260px wide x 180px high
-    add_image_size('bootstrap-small', 300, 200); // 300px wide x 200px high
-    add_image_size('bootstrap-medium', 360, 270); // 360px wide by 270px high
-    add_image_size('ishouvik-single', 7e25, 270); // 725px wide by 270px high
 }
 
 /**
@@ -85,6 +80,7 @@ function ishouvikwp_scripts_loader() {
 
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-2.1.1.min.js');
     wp_enqueue_script('bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('bootstrap_form_fields', get_stylesheet_directory_uri() . '/js/form_fields.js'); // Add TB Classes to form fields
 
 }
 add_action('wp_enqueue_scripts', 'ishouvikwp_scripts_loader');
@@ -94,6 +90,17 @@ add_action('wp_enqueue_scripts', 'ishouvikwp_scripts_loader');
  *
  */
 function ishouvikwp_widgets_init() {
+
+    register_sidebar(
+        array(
+            'name'          => __('Common Sidebar', 'ishouvikwp'),
+            'id'            => 'sidebar',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => "</div>",
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>',
+        )
+    );
 
     register_sidebar(
         array(
@@ -149,7 +156,7 @@ function ishouvikwp_widgets_init() {
     ) );
 
 }
-add_action('init', 'ishouvikwp_widgets_init');
+add_action('widgets_init', 'ishouvikwp_widgets_init');
 
 
 /**
@@ -371,7 +378,6 @@ add_filter('wp_title', 'ishouvikwp_wp_title', 10, 2);
 */
 
 function ishouvik_nav_menu($theme_location) {
-
     wp_nav_menu(
         array(
             'theme_location' => $theme_location,
@@ -385,6 +391,24 @@ function ishouvik_nav_menu($theme_location) {
         )
     );
 }
+
+
+/**
+ * Custom Excerpt
+*/
+function ishouvik_excerpt_length($length) {
+    return 150;
+}
+add_filter('excerpt_length', 'ishouvik_excerpt_length');
+
+function ishouvik_excerpt_more($more) {
+    global $post;
+    return '... <div class="clearfix"><a class="btn btn-primary pull-right" href="' . get_permalink($post->ID) . '">Read More</a></div>'; 
+}
+add_filter('excerpt_more', 'ishouvik_excerpt_more');
+
+
+
 
 /*
  * Numbered Pagination
@@ -427,6 +451,9 @@ function ishouvik_pagination() {
 */
 function is_social( $param = false ) {
     switch($param) {
+        case 'email':
+            echo 'mailto:' . get_theme_mod('is_email_address');
+            break;
         case 'tw':
             echo '//twitter.com/' . get_theme_mod('is_tw_handler') . '/';
             break;
@@ -435,6 +462,12 @@ function is_social( $param = false ) {
             break;
         case 'gp':
             echo '//plus.google.com/' . get_theme_mod('is_gp_username') . '/';
+            break;
+        case 'github':
+            echo '//github.com/' . get_theme_mod('is_github_profile') . '/';
+            break;
+        case 'rss':
+            echo get_theme_mod('is_rss_link');
             break;
         default:
             echo '';
@@ -449,9 +482,18 @@ function is_social( $param = false ) {
 
 function is_logo() {
     $logo_img = get_theme_mod('is_logo');
-    if ( !empty($logo_img) ) {
-        echo '<img src="' . $logo_img . '" class="img-responsive" />';
-    } else {
-        echo "<h1>" . bloginfo('name') . "</h1>";
+    if ( !empty($logo_img) ) { ?>
+        <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
+            <img src="<?php echo $logo_img; ?>" class="img-responsive center-block" alt="<?php bloginfo('name'); ?>" />
+        </a>
+    <?php } else { ?>
+        <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><h1 class="site-title"><?php bloginfo('name'); ?></h1></a>
+    <?php
     }
 }
+
+
+/**
+ * JetPack Responsive Videos
+*/
+add_theme_support( 'jetpack-responsive-videos' );

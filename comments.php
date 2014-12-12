@@ -17,7 +17,7 @@ if (post_password_required()) {
 <div id="comments" class="comments-area">
     <?php if (have_comments()) : ?>
 
-        <ul class="media-list">
+        <ul class="media-list well">
             <?php wp_list_comments(array('callback' => 'ishouvikwp_comment')); ?>
         </ul><!-- /.commentlist -->
 

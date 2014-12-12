@@ -3,8 +3,8 @@ Theme Name: iShouvik WP Skeleton
 Theme URI: http://ishouvik.com
 Author: Shouvik Mukherjee
 Author URI: http://ishouvik.com
-Description: A semantic HTML/CSS framework base theme for WordPress Developers ported from Twitter Bootstrap
-Version: 1.7
+Description: A semantic HTML/CSS framework based theme for WordPress Developers ported from Twitter Bootstrap
+Version: 2.0
 GitHub Theme URI: ishouvik/ishouvik-wp
 GitHub Branch: master
 =======
@@ -19,12 +19,69 @@ Enjoy!
 
 */
 
-.border {
-	border: 1px solid red;
+/* =Layout
+-------------------------------------------------------------- */
+
+/* Body */
+body {
+  background: #D8D8D8;
 }
 
-img { max-width: 100%; }
+/* Site Header */
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+.site-title {
+  font-weight: bold;
+}
+.site-description {
+  font-size: 150%;
+}
 
+/* Primary Navbar */
+.is-navbar-primary {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
+/* Site Container */
+.site-container {
+  padding-top: 25px;
+  background: #ffffff;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 20px;
+  padding: 15px;
+  min-height: 200px;
+  background: #F8F8F8;
+  border-top: 1px solid #E7E7E7;
+}
+
+/* =Post
+-------------------------------------------------------------- */
+
+/* Articles */
+.post-article {
+  margin: 10px 0;
+  padding: 5px 0;
+  border-bottom: 1px dotted #dedede;
+}
+
+.post-article h3 {
+  margin-top: 0;
+}
+
+/* =Elements
+-------------------------------------------------------------- */
 
 /* Social Profiles */
 .social-profiles {
@@ -32,35 +89,10 @@ img { max-width: 100%; }
   letter-spacing: 3px;
 }
 
-/* Articles */
-.post-article {
-	margin: 10px 0;
-	padding: 5px 0;
-	border-bottom: 1px dotted #dedede;
-}
-
-.post-article h3 {
-	margin-top: 0;
-}
-
-p.img-article-single {
-	max-height: 270px;
-	display: block;
-	overflow: hidden;
-}
-
-img.img-article-single {
-	width: 100%;
-	height: auto;
-}
-
-/* Footer */
-.site-footer {
-	margin: 0;
-	padding: 15px;
-	min-height: 200px;
-	background: #F8F8F8;
-	border-top: 1px solid #E7E7E7;
+.searchform {
+  padding: 15px;
+  background: #f4f4f4;
+  border: 1px solid #dedede;
 }
 
 /* Pagination Workaround */
@@ -158,9 +190,113 @@ img.img-article-single {
   border-bottom-right-radius: 3px;
 }
 
-/* Misc */
+/* =Misc
+-------------------------------------------------------------- */
+
 .no-radius {
 	border-radius: 0;
 	moz-border-radius: 0;
 	-webkit-border-radius: 0;
 }
+
+.border {
+  border: 1px solid red;
+}
+
+img { max-width: 100%; }
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* == WP CSS - post_class() == */
+
+.post-id {}
+.post {}
+.page {}
+.attachment {}
+.sticky {}
+.hentry {}
+.category-misc {}
+.category-example {}
+.tag-news {}
+.tag-wordpress {}
+.tag-markup {}
+.gallery-caption {}
+.bypostauthor {}
+

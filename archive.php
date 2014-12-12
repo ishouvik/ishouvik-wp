@@ -6,9 +6,7 @@
  * @subpackage iShouvik WP
  */
 get_header(); ?>
-<div class="container site-container">
-	<div class="clearfix">
-	    <div class="col-md-8 site-main-content">
+	    <div id="primary" class="col-md-8 site-main-content">
 	        <?php if (have_posts()): ?>
 	        	<header class="well">
 	        		<h1 class="archive-title">
@@ -30,11 +28,7 @@ get_header(); ?>
 		        <?php endwhile; ?>
 	        <?php endif; ?>
 	    </div>
-	    <div class="col-md-4 hidden-xs site-sidebar">
-	        <?php get_sidebar('blog'); ?>
-	    </div>
-	</div>
-</div>
+        <?php get_sidebar('blog'); ?>
 
 <?php ishouvik_pagination(); ?>
 

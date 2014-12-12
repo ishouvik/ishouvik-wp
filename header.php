@@ -24,26 +24,32 @@
           href="<?php echo get_template_directory_uri();?>/assets/ico/apple-touch-icon-57-precomposed.png">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>  data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="10">
+<body <?php body_class(); ?> data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="10">
 
-    <div class="navbar navbar-default no-radius" role="navigation">
+    <div class="site-header">
         <div class="container">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ishouvik-navbar-collapse-primary">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <div class="clearfix">
-                <a class="navbar-brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-                    <?php is_logo(); ?></a>
-
-                    <?php ishouvik_nav_menu('primary'); // Display primary navigation ?>
-
-                    <?php get_search_form(); ?>
-
-                    <?php get_template_part( 'content', 'socialprofiles' ); ?>
-            </div> 
+            <?php is_logo(); ?>
+            <h2 class="site-description"><?php bloginfo('description'); ?></h2>
         </div>
     </div>
+
+        <div class="navbar navbar-inverse is-navbar-primary" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ishouvik-navbar-collapse-primary">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand visible-sm visible-xs" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+                        Navigation
+                    </a>
+                </div>
+
+                <?php ishouvik_nav_menu('primary'); // Display primary navigation ?>
+            </div>
+        </div>
+
+    <div class="container site-container clearfix">

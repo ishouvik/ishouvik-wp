@@ -28,8 +28,8 @@ class ishouvikwp_options
         ) );
 
         // Social Profiles section
-        $wp_manager->add_section( 'social_profiles', array(
-            'title'          => 'Social Profiles',
+        $wp_manager->add_section( 'contact_options', array(
+            'title'          => 'Contact Options',
             'priority'       => 35,
         ) );
 
@@ -46,16 +46,27 @@ class ishouvikwp_options
             'type'       => 'text',
         ) );
 
+        // Email Address
+        $wp_manager->add_setting( 'is_email_address', array(
+            'default'        => 'contact@ishouvik.com',
+        ) );
+        $wp_manager->add_control( 'is_email_address', array(
+            'label'   => 'Email Address',
+            'section' => 'contact_options',
+            'type'    => 'text',
+            'priority' => 1
+        ) );
+
         // Twitter Handler control
         $wp_manager->add_setting( 'is_tw_handler', array(
             'default'        => 'ishouvik',
         ) );
         $wp_manager->add_control( 'is_tw_handler', array(
-            'label'   => 'Twitter Handler (twitter.com/handler)',
-            'section' => 'social_profiles',
+            'label'   => 'Twitter Handler',
+            'section' => 'contact_options',
             'settings' => 'is_tw_handler',
             'type'    => 'text',
-            'priority' => 1
+            'priority' => 2
         ) );
 
         // Facebook Username control
@@ -63,21 +74,43 @@ class ishouvikwp_options
             'default'        => 'shouvikmukherjee',
         ) );
         $wp_manager->add_control( 'is_fb_username', array(
-            'label'   => 'Facebook Username (facebook.com/username)',
-            'section' => 'social_profiles',
+            'label'   => 'Facebook Username',
+            'section' => 'contact_options',
             'type'    => 'text',
-            'priority' => 2
+            'priority' => 3
         ) );
 
         // Google Plus Username control
         $wp_manager->add_setting( 'is_gp_username', array(
-            'default'        => 'shouvikmukherjee',
+            'default'        => '+ShouvikMukherjee-ishouvik',
         ) );
         $wp_manager->add_control( 'is_gp_username', array(
-            'label'   => 'Google Plus Username (plus.google.com/+username)',
-            'section' => 'social_profiles',
+            'label'   => 'Google Plus Username',
+            'section' => 'contact_options',
             'type'    => 'text',
-            'priority' => 3
+            'priority' => 4
+        ) );
+
+        // GitHub Profile control
+        $wp_manager->add_setting( 'is_github_profile', array(
+            'default'        => 'ishouvik',
+        ) );
+        $wp_manager->add_control( 'is_github_profile', array(
+            'label'   => 'GitHub Profile',
+            'section' => 'contact_options',
+            'type'    => 'text',
+            'priority' => 5
+        ) );
+
+        // RSS Link
+        $wp_manager->add_setting( 'is_rss_link', array(
+            'default'        => '/feed',
+        ) );
+        $wp_manager->add_control( 'is_rss_link', array(
+            'label'   => 'RSS Link',
+            'section' => 'contact_options',
+            'type'    => 'text',
+            'priority' => 6
         ) );
 
     }
