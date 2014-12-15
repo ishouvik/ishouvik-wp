@@ -46,6 +46,24 @@ class ishouvikwp_options
             'type'       => 'text',
         ) );
 
+
+        // Site Intro Control
+        $wp_manager->add_setting( 'is_site_intro', array(
+            'default'        => 'yes',
+        ) );
+
+        $wp_manager->add_control( 'is_site_intro', array(
+            'label'      => 'Site Intro',
+            'section'    => 'site_descriptions',
+            'settings'   => 'is_site_intro',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'yes' => 'Yes',
+                    'no' => 'No'
+            ),
+        ) );
+
+
         // Email Address
         $wp_manager->add_setting( 'is_email_address', array(
             'default'        => 'contact@ishouvik.com',

@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.1 - 2014 - 12 - 15
+### ADDED
+- Site Intro widget area
+- Minified maiin stylesheet
+
 ## 2.0 - 2014 - 12 - 13
 ### ADDED
 - Better default layout

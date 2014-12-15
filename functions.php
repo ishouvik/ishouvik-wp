@@ -93,6 +93,17 @@ function ishouvikwp_widgets_init() {
 
     register_sidebar(
         array(
+            'name'          => __('Site Intro', 'ishouvikwp'),
+            'id'            => 'site-intro',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => "</div>",
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>',
+        )
+    );
+
+    register_sidebar(
+        array(
             'name'          => __('Common Sidebar', 'ishouvikwp'),
             'id'            => 'sidebar',
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
