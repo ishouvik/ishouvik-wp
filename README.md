@@ -14,7 +14,7 @@ I would personally recommend you to create your own Child themes to give your wo
 
 
 ## Troubleshoot
-If the new 'customize' do not appear on the site after saving please perform the following procedure --
+If the new 'customize' options do not appear on the site after saving please perform the following procedure --
 - Save site permalinks again.
 - Make some changes to the 'customize' page and save the changes again. 
 
