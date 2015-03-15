@@ -1,4 +1,5 @@
 <?php
+
 new ishouvikwp_options();
 
 class ishouvikwp_options
@@ -75,6 +76,22 @@ class ishouvikwp_options
             'priority' => 1
         ) );
 
+        $wp_manager->add_setting( 'is_email_address_display', array(
+            'default'        => 'yes',
+        ) );
+
+        $wp_manager->add_control( 'is_email_address_display', array(
+            'label'      => 'Show email address?',
+            'section'    => 'contact_options',
+            'settings'   => 'is_email_address_display',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'yes' => 'Yes',
+                    'no' => 'No'
+            ),
+            'priority' => 2
+        ) );
+
         // Twitter Handler control
         $wp_manager->add_setting( 'is_tw_handler', array(
             'default'        => 'ishouvik',
@@ -84,7 +101,23 @@ class ishouvikwp_options
             'section' => 'contact_options',
             'settings' => 'is_tw_handler',
             'type'    => 'text',
-            'priority' => 2
+            'priority' => 3
+        ) );
+
+        $wp_manager->add_setting( 'is_tw_handler_display', array(
+            'default'        => 'yes',
+        ) );
+
+        $wp_manager->add_control( 'is_tw_handler_display', array(
+            'label'      => 'Display?',
+            'section'    => 'contact_options',
+            'settings'   => 'is_tw_handler_display',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'yes' => 'Yes',
+                    'no' => 'No'
+            ),
+            'priority' => 4
         ) );
 
         // Facebook Username control
@@ -95,7 +128,23 @@ class ishouvikwp_options
             'label'   => 'Facebook Username',
             'section' => 'contact_options',
             'type'    => 'text',
-            'priority' => 3
+            'priority' => 5
+        ) );
+
+        $wp_manager->add_setting( 'is_fb_username_display', array(
+            'default'        => 'yes',
+        ) );
+
+        $wp_manager->add_control( 'is_fb_username_display', array(
+            'label'      => 'Display?',
+            'section'    => 'contact_options',
+            'settings'   => 'is_fb_username_display',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'yes' => 'Yes',
+                    'no' => 'No'
+            ),
+            'priority' => 6
         ) );
 
         // Google Plus Username control
@@ -106,7 +155,23 @@ class ishouvikwp_options
             'label'   => 'Google Plus Username',
             'section' => 'contact_options',
             'type'    => 'text',
-            'priority' => 4
+            'priority' => 7
+        ) );
+
+        $wp_manager->add_setting( 'is_gp_username_display', array(
+            'default'        => 'yes',
+        ) );
+
+        $wp_manager->add_control( 'is_gp_username_display', array(
+            'label'      => 'Display?',
+            'section'    => 'contact_options',
+            'settings'   => 'is_gp_username_display',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'yes' => 'Yes',
+                    'no' => 'No'
+            ),
+            'priority' => 8
         ) );
 
         // GitHub Profile control
@@ -117,7 +182,23 @@ class ishouvikwp_options
             'label'   => 'GitHub Profile',
             'section' => 'contact_options',
             'type'    => 'text',
-            'priority' => 5
+            'priority' => 9
+        ) );
+
+        $wp_manager->add_setting( 'is_github_profile_display', array(
+            'default'        => 'yes',
+        ) );
+
+        $wp_manager->add_control( 'is_github_profile_display', array(
+            'label'      => 'Display?',
+            'section'    => 'contact_options',
+            'settings'   => 'is_github_profile_display',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'yes' => 'Yes',
+                    'no' => 'No'
+            ),
+            'priority' => 10
         ) );
 
         // RSS Link
@@ -128,7 +209,23 @@ class ishouvikwp_options
             'label'   => 'RSS Link',
             'section' => 'contact_options',
             'type'    => 'text',
-            'priority' => 6
+            'priority' => 11
+        ) );
+
+        $wp_manager->add_setting( 'is_rss_link_display', array(
+            'default'        => 'yes',
+        ) );
+
+        $wp_manager->add_control( 'is_rss_link_display', array(
+            'label'      => 'Display?',
+            'section'    => 'contact_options',
+            'settings'   => 'is_rss_link_display',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'yes' => 'Yes',
+                    'no' => 'No'
+            ),
+            'priority' => 12
         ) );
 
     }

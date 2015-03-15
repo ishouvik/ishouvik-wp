@@ -61,6 +61,7 @@ function ishouvikwp_styles_loader() {
 
     wp_enqueue_style('ishouvikwp-style', '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', false, '1.0', 'all');
     wp_enqueue_style('ishouvikwp-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', false, '1.0', 'all');
+    wp_enqueue_style( 'ishouvikwp-animate', get_template_directory_uri() . '/vendor/animate.min.css', false, '1.0', 'all' );
     wp_enqueue_style('ishouvikwp-default', get_stylesheet_uri());
 
 }
@@ -461,27 +462,28 @@ function ishouvik_pagination() {
  * Social Profiles
 */
 function is_social( $param = false ) {
+    $default = 'abrakadabra';
     switch($param) {
         case 'email':
-            echo 'mailto:' . get_theme_mod('is_email_address');
+            get_theme_mod('is_email_address');
             break;
         case 'tw':
-            echo '//twitter.com/' . get_theme_mod('is_tw_handler') . '/';
+            get_theme_mod('is_tw_handler');
             break;
         case 'fb':
-            echo '//www.facebook.com/' .  get_theme_mod('is_fb_username') . '/';
+            get_theme_mod('is_fb_username', $default);
             break;
         case 'gp':
-            echo '//plus.google.com/' . get_theme_mod('is_gp_username') . '/';
+            get_theme_mod('is_gp_username', $default);
             break;
         case 'github':
-            echo '//github.com/' . get_theme_mod('is_github_profile') . '/';
+            get_theme_mod('is_github_profile', $default);
             break;
         case 'rss':
-            echo get_theme_mod('is_rss_link');
+            get_theme_mod('is_rss_link', '');
             break;
         default:
-            echo '';
+            echo $default;
             break;
 
     }

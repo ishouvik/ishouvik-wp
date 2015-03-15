@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.2 - 2015 - 3 - 15
+### ADDED
+- Animate.css library
+- Select dropdown for contact options
+
 ## 2.1 - 2014 - 12 - 15
 ### ADDED
 - Site Intro widget area

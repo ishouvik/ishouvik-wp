@@ -30,6 +30,7 @@ If the new 'customize' options do not appear on the site after saving please per
 ## Credits:
 - Twitter Bootstrap Team and its contributors
 - Fontawesome Team and its contributors
+- Daniel Eden for <a href="https://github.com/daneden/animate.css">Animate.css</a>
 - Inspired by the effort by Mark Motto (https://twitter.com/mdo)
 
 
