@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.2.1 - 2015 - 3 - 15
+### FIXED
+- Theme customize options
+
 ## 2.2 - 2015 - 3 - 15
 ### ADDED
 - Animate.css library

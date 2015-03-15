@@ -462,28 +462,27 @@ function ishouvik_pagination() {
  * Social Profiles
 */
 function is_social( $param = false ) {
-    $default = 'abrakadabra';
     switch($param) {
         case 'email':
-            get_theme_mod('is_email_address');
+            echo 'mailto:' . get_theme_mod('is_email_address');
             break;
         case 'tw':
-            get_theme_mod('is_tw_handler');
+            echo 'https://twitter.com/' . get_theme_mod('is_tw_handler');
             break;
         case 'fb':
-            get_theme_mod('is_fb_username', $default);
+            echo 'https://facebook.com/' . get_theme_mod('is_fb_username');
             break;
         case 'gp':
-            get_theme_mod('is_gp_username', $default);
+            echo 'https://plus.google.com/' . get_theme_mod('is_gp_username');
             break;
         case 'github':
-            get_theme_mod('is_github_profile', $default);
+            echo 'https://github.com/' . get_theme_mod('is_github_profile');
             break;
         case 'rss':
-            get_theme_mod('is_rss_link', '');
+            echo get_theme_mod('is_rss_link');
             break;
         default:
-            echo $default;
+            return false;
             break;
 
     }
