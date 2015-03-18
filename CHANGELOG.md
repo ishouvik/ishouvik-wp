@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## 2.3 - 2015 - 3 - 18
 ### ADDED
-- Wow.js library -- Reveal Animations When You Scroll
+- WOW JS library -- Reveal Animations When You Scroll
 
 ### FIXED
 - form_fields.js -- Add Bootstrap Classes to form fields

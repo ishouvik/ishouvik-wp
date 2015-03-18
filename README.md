@@ -13,6 +13,12 @@ I would personally recommend you to create your own Child themes to give your wo
 - Use GitHub updater plugin for auto-update from Github: https://github.com/afragen/github-updater
 
 
+## Documentation
+- Bootstrap http://getbootstrap.com/
+- Animate.css - https://github.com/daneden/animate.css
+- WOW JS - https://github.com/matthieua/WOW
+
+
 ## Troubleshoot
 If the new 'customize' options do not appear on the site after saving please perform the following procedure --
 - Save site permalinks again.
@@ -28,9 +34,10 @@ If the new 'customize' options do not appear on the site after saving please per
 
 
 ## Credits:
-- Twitter Bootstrap Team and its contributors
+- Bootstrap Team and its contributors <a href="http://getbootstrap.com/"></a>
 - Fontawesome Team and its contributors
 - Daniel Eden for <a href="https://github.com/daneden/animate.css">Animate.css</a>
+- Matthieu Aussaguel for <a href="https://github.com/matthieua/WOW">WOW</a>
 - Inspired by the effort by Mark Motto (https://twitter.com/mdo)
 
 
