@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.3 - 2015 - 3 - 18
+### ADDED
+- Wow.js library -- Reveal Animations When You Scroll
+
+### FIXED
+- form_fields.js -- Add Bootstrap Classes to form fields
+
 ## 2.2.1 - 2015 - 3 - 15
 ### FIXED
 - Theme customize options
@@ -26,7 +33,7 @@ All notable changes to this project will be documented in this file.
 - Common Sidebar widget area along with pages/posts sidebar widget area
 - Email, GitHub and RSS Link theme customization fields
 
-### BUGFIX
+### FIXED
 - Primary Navigation alignment for mobile devices
 - Bugfux: Large feaetured image for single pages
 - Search Form alignment

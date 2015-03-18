@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"is_email",
+				"is_email_address"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_style"
+			],
+			[
 				"font",
 				"font-size"
 			],
@@ -506,24 +514,48 @@
 			[
 				"mode",
 				"moduledata	ci-module-data-array"
-			],
-			[
-				"cache",
-				"cache_delete"
-			],
-			[
-				"load",
-				"load_view	CI - Load View"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/functions.php",
+			"settings":
+			{
+				"buffer_size": 16282,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/style.css",
+			"settings":
+			{
+				"buffer_size": 4490,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/CHANGELOG.md",
+			"settings":
+			{
+				"buffer_size": 1196,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/content-contact_options.php",
+			"settings":
+			{
+				"buffer_size": 1234,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 159.0,
+		"height": 33.0,
 		"selected_items":
 		[
 			[
@@ -559,7 +591,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -579,10 +611,28 @@
 	},
 	"expanded_folders":
 	[
-		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp"
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/includes"
 	],
 	"file_history":
 	[
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/page-two-col.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/content.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/content-contact_options.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/CHANGELOG.md",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/functions.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/includes/custom-options.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/.gitignore",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/style.css",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/404.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/header.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/footer.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/content-site_intro.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/includes/class-ishouvikwp_walker_nav_menu.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/category.php",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/README.md",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/vendor/animate.min.css",
+		"/var/www/html/wordpress/wp-content/themes/ishouvik-wp/search.php",
 		"/home/shouvik/OpenShift/JayanthDoc/wp/.openshift/pear.txt",
 		"/home/shouvik/OpenShift/JayanthDoc/wp/.openshift/themes/ishouvik-wp-jayanthdoc/functions.php",
 		"/home/shouvik/OpenShift/JayanthDoc/wp/.openshift/plugins/is-testimonials/templates/content-is_testimonial.php",
@@ -693,28 +743,11 @@
 		"/var/www/Rails/yuva/config/database.yml",
 		"/var/www/Rails/yuva/public/assets/ckeditor/jquery.js",
 		"/var/www/Rails/yuva/config/application.rb",
-		"/var/www/Rails/yuva/__Gemfile.lock",
-		"/var/www/Rails/yuva/app/views/images/edit.js.erb",
-		"/var/www/Rails/yuva/app/assets/javascripts/images.js.coffee",
-		"/var/www/Rails/yuva/app/views/image_albums/show.html.erb",
-		"/var/www/Rails/yuva/app/views/image_albums/_form.html.erb",
-		"/var/www/Rails/yuva/app/views/pages/all.html.erb",
-		"/var/www/Rails/yuva/public/assets/ckeditor/lang/ja.js",
-		"/var/www/Rails/yuva/public/assets/ckeditor/plugins/image/dialogs/image-02d17af986ec075880c347ddf287bef6.js",
-		"/var/www/Rails/yuva/app/assets/javascripts/video_galleries.js.coffee",
-		"/var/www/Rails/yuva/app/controllers/image_albums_controller.rb",
-		"/var/www/Rails/yuva/app/assets/stylesheets/main.css.scss",
-		"/var/www/Rails/yuva/app/controllers/application_controller.rb",
-		"/var/www/Rails/yuva/test/models/page_test.rb",
-		"/var/www/Rails/yuva/app/views/pages/index.html.erb",
-		"/var/www/Rails/yuva/public/assets/ckeditor/lang/el.js",
-		"/var/www/Rails/yuva/public/assets/ckeditor/lang/gl.js",
-		"/var/www/Rails/yuva/public/assets/ckeditor/lang/en-gb-ecbdf10b13fe49e8b4b6c7b431da9cdb.js",
-		"/var/www/Rails/yuva/app/views/devise/mailer/confirmation_instructions.html.erb"
+		"/var/www/Rails/yuva/__Gemfile.lock"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -728,6 +761,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"is_email_address_option",
+			"intro",
 			"custom_meta_box_nonce",
 			"eam_member_designation",
 			"designation",
@@ -853,8 +888,6 @@
 			"news",
 			"news_categories",
 			"NewsC",
-			"news",
-			"News.",
 			"news"
 		],
 		"highlight": true,
@@ -878,8 +911,124 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15376,
+								15376
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10142.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/CHANGELOG.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/var/www/html/wordpress/wp-content/themes/ishouvik-wp/content-contact_options.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								771,
+								771
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": -0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -934,6 +1083,46 @@
 		"selected_items":
 		[
 			[
+				"chan",
+				"CHANGELOG.md"
+			],
+			[
+				"st",
+				"style.css"
+			],
+			[
+				"conta",
+				"content-contact_options.php"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"footer",
+				"footer.php"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"cpnt",
+				"content-contact_options.php"
+			],
+			[
+				"sty",
+				"style.css"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"fu",
+				"functions.php"
+			],
+			[
 				"page",
 				"themes/ishouvik-wp-jayanthdoc/page-welcome.php"
 			],
@@ -943,14 +1132,6 @@
 			],
 			[
 				"fun",
-				"themes/ishouvik-wp-jayanthdoc/functions.php"
-			],
-			[
-				"sty",
-				"themes/ishouvik-wp-jayanthdoc/style.css"
-			],
-			[
-				"func",
 				"themes/ishouvik-wp-jayanthdoc/functions.php"
 			],
 			[
@@ -1382,10 +1563,6 @@
 				"db/migrate/20140313103420_create_blog_posts.rb"
 			],
 			[
-				"header",
-				"app/views/layouts/_header.html.erb"
-			],
-			[
 				"account/edi",
 				"app/views/accounts/edit.html.erb"
 			],
@@ -1416,34 +1593,6 @@
 			[
 				"categories_c",
 				"app/controllers/blog_categories_controller.rb"
-			],
-			[
-				"categories/all",
-				"app/views/blog_categories/all.html.erb"
-			],
-			[
-				"events/al",
-				"app/views/events/all.html.erb"
-			],
-			[
-				"events",
-				"app/controllers/events_controller.rb"
-			],
-			[
-				"layouts/ad",
-				"app/views/layouts/admin.html.erb"
-			],
-			[
-				"account/ed",
-				"app/views/accounts/edit.html.erb"
-			],
-			[
-				"account/_",
-				"app/views/accounts/_form.html.erb"
-			],
-			[
-				"accounts/",
-				"app/views/accounts/all.html.erb"
 			]
 		],
 		"width": 0.0

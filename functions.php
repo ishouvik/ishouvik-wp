@@ -74,18 +74,21 @@ add_action('wp_enqueue_scripts', 'ishouvikwp_styles_loader');
 function ishouvikwp_scripts_loader() {
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
-
         wp_enqueue_script('comment-reply');
-
     }
 
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-2.1.1.min.js');
     wp_enqueue_script('bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array('jquery'), '1.0', true);
-    wp_enqueue_script('bootstrap_form_fields', get_stylesheet_directory_uri() . '/js/form_fields.js'); // Add TB Classes to form fields
+    wp_enqueue_script( 'wow-js', get_template_directory_uri() . '/vendor/wow.min.js' ); // Wow JS to invoke animate.css classes when on screen
+    wp_enqueue_script('bootstrap_form_fields', get_template_directory_uri() . '/js/form_fields.js'); // Add Bootstrap Classes to form fields
 
 }
 add_action('wp_enqueue_scripts', 'ishouvikwp_scripts_loader');
 
+function ishwp_wow_js_loader() {
+    echo '<script type="text/javascript">new WOW().init();</script>';
+}
+add_action('wp_head', 'ishwp_wow_js_loader');
 /**
  * Define theme's widget areas.
  *
