@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.4 2015 - 3 - 29
+### FIXED
+- Parent theme style import for child themes
+
 ## 2.3 - 2015 - 3 - 18
 ### ADDED
 - WOW JS library -- Reveal Animations When You Scroll

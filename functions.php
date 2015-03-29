@@ -58,12 +58,11 @@ function ishouvikwp_images() {
  *
  */
 function ishouvikwp_styles_loader() {
-
     wp_enqueue_style('ishouvikwp-style', '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', false, '1.0', 'all');
     wp_enqueue_style('ishouvikwp-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', false, '1.0', 'all');
     wp_enqueue_style( 'ishouvikwp-animate', get_template_directory_uri() . '/vendor/animate.min.css', false, '1.0', 'all' );
+    wp_enqueue_style( 'ishouvik-wp-main', get_template_directory_uri() . '/css/ishouvik-wp/main.min.css', false, '1.0', 'all' );
     wp_enqueue_style('ishouvikwp-default', get_stylesheet_uri());
-
 }
 add_action('wp_enqueue_scripts', 'ishouvikwp_styles_loader');
 
