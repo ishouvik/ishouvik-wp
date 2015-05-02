@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.5 2015 - 4 - 2
+### ADDED
+- TGM Plugin Activation for resolving plugin dependencies easily
+
 ## 2.4 2015 - 3 - 29
 ### FIXED
 - Parent theme style import for child themes

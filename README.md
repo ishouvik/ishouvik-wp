@@ -10,7 +10,7 @@ I would personally recommend you to create your own Child themes to give your wo
 ## Installation
 - Clone this Git repo inside your wp-content/themes directory
 - Activate the theme from wp admin panel
-- Use GitHub updater plugin for auto-update from Github: https://github.com/afragen/github-updater
+- Install and activate required and recommended plugins 
 
 
 ## Documentation
@@ -34,11 +34,12 @@ If the new 'customize' options do not appear on the site after saving please per
 
 
 ## Credits:
-- Bootstrap Team and its contributors <a href="http://getbootstrap.com/"></a>
-- Fontawesome Team and its contributors
+- <a href="http://tgmpluginactivation.com/">TGM Plugin Activation</a> for handling plugin dependencies
+- <a href="http://getbootstrap.com/">Bootstrap</a> Team and its contributors
+- <a href="http://fortawesome.github.io/Font-Awesome/">Fontawesome</a> for rich icons
 - Daniel Eden for <a href="https://github.com/daneden/animate.css">Animate.css</a>
 - Matthieu Aussaguel for <a href="https://github.com/matthieua/WOW">WOW</a>
-- Inspired by the effort by Mark Motto (https://twitter.com/mdo)
+- Inspired by the effort by <a href="https://twitter.com/mdo">Mark Motto</a>
 
 
 ## To Do
