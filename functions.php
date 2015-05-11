@@ -506,12 +506,27 @@ function is_logo() {
     }
 }
 
+/**
+ * Custom Codes
+*/
+
+add_action('wp_head','is_custom_css');
+function is_custom_css() {
+    $output="<style>". get_theme_mod('is_custom_css') . "</style>";
+    echo $output;
+}
+
+add_action('wp_head','is_custom_js');
+function is_custom_js() {
+    $output="<script>" . get_theme_mod('is_custom_js') . "</script>";
+    echo $output;
+}
+
 
 /**
  * JetPack Responsive Videos
 */
 add_theme_support( 'jetpack-responsive-videos' );
-
 
 
 /**

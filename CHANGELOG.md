@@ -1,7 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## 2.5 2015 - 4 - 2
+## 2.6 2015 - 5 - 11
+### ADDED
+- Custom CSS and JS options
+
+
+## 2.5 2015 - 5 - 2
 ### ADDED
 - TGM Plugin Activation for resolving plugin dependencies easily
 

@@ -34,6 +34,12 @@ class ishouvikwp_options
             'priority'       => 35,
         ) );
 
+        // Site Scripts section
+        $wp_manager->add_section( 'custom_codes', array(
+            'title'          => 'Custom Codes',
+            'priority'       => 36,
+        ) );
+
 
         // Site Logo control
         $wp_manager->add_setting( 'is_logo', array(
@@ -226,6 +232,33 @@ class ishouvikwp_options
                     'no' => 'No'
             ),
             'priority' => 12
+        ) );
+
+
+        // Custom CSS 
+        $wp_manager->add_setting( 'is_custom_css', array(
+            'default'        => '',
+        ) );
+
+        $wp_manager->add_control( 'is_custom_css', array(
+            'label'      => 'Custom CSS',
+            'section'    => 'custom_codes',
+            'settings'   => 'is_custom_css',
+            'type'       => 'textarea',
+            'priority' => 13
+        ) );
+
+        // Custom Javascript
+        $wp_manager->add_setting( 'is_custom_js', array(
+            'default'        => '',
+        ) );
+
+        $wp_manager->add_control( 'is_custom_js', array(
+            'label'      => 'Custom Javascript',
+            'section'    => 'custom_codes',
+            'settings'   => 'is_custom_js',
+            'type'       => 'textarea',
+            'priority' => 14
         ) );
 
     }
