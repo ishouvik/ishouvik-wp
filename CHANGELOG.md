@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.7 2015 - 10 - 16
+### ADDED
+- Upgraded Bootstrap library
+- Upgraded Fontawesome library
+- New default/dark navigation selection from Customize page
+
+### Removed
+- Github Updater plugin installation from TGM Plugin of the theme due to branch name conflict. The plugin has to be installed manually
+
 ## 2.6 2015 - 5 - 11
 ### ADDED
 - Custom CSS and JS options

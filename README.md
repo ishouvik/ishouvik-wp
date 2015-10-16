@@ -11,6 +11,7 @@ I would personally recommend you to create your own Child themes to give your wo
 - Clone this Git repo inside your wp-content/themes directory
 - Activate the theme from wp admin panel
 - Install and activate required and recommended plugins 
+- Install the <a href="https://github.com/afragen/github-updater">Github Updater</a> plugin to auto-update the theme
 
 
 ## Documentation

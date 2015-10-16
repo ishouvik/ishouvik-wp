@@ -58,8 +58,8 @@ function ishouvikwp_images() {
  *
  */
 function ishouvikwp_styles_loader() {
-    wp_enqueue_style('ishouvikwp-style', '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', false, '1.0', 'all');
-    wp_enqueue_style('ishouvikwp-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', false, '1.0', 'all');
+    wp_enqueue_style('ishouvikwp-style', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', false, '1.0', 'all');
+    wp_enqueue_style('ishouvikwp-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', false, '1.0', 'all');
     wp_enqueue_style( 'ishouvikwp-animate', get_template_directory_uri() . '/vendor/animate.min.css', false, '1.0', 'all' );
     wp_enqueue_style( 'ishouvik-wp-main', get_template_directory_uri() . '/css/ishouvik-wp/main.min.css', false, '1.0', 'all' );
     wp_enqueue_style('ishouvikwp-default', get_stylesheet_uri());
@@ -507,6 +507,20 @@ function is_logo() {
 }
 
 /**
+  *  Primary navigation class
+*/
+
+function is_site_primary_nav_class() {
+    $nav_class = get_theme_mod('is_site_primary_nav_class');
+
+    if ($nav_class == 'dark') {
+        echo 'navbar-inverse';
+    } else {
+        echo 'navbar-default';
+    }
+}
+
+/**
  * Custom Codes
 */
 
@@ -554,14 +568,6 @@ function my_theme_register_required_plugins() {
      * If the source is NOT from the .org repo, then source is also required.
      */
     $plugins = array(
-      array(
-            'name'               => 'Github Updater',
-            'slug'               => 'github-updater-develop',
-            'source'             => 'https://github.com/afragen/github-updater/archive/develop.zip',
-            'required'           => true,
-            'external_url'       => 'https://github.com/afragen/github-updater',
-            'force_activation'   => true,
-        ),
         array(
             'name'      => 'Wordfence',
             'slug'      => 'wordfence',

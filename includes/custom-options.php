@@ -71,6 +71,23 @@ class ishouvikwp_options
         ) );
 
 
+        // Site Primary Nav Control
+        $wp_manager->add_setting( 'is_site_primary_nav_class', array(
+            'default'        => 'default',
+        ) );
+
+        $wp_manager->add_control( 'is_site_primary_nav_class', array(
+            'label'      => 'Main Navbar',
+            'section'    => 'site_descriptions',
+            'settings'   => 'is_site_primary_nav_class',
+            'type'       => 'select',
+            'choices'   =>  array(
+                    'default' => 'Default',
+                    'dark' => 'Dark'
+            ),
+        ) );
+
+
         // Email Address
         $wp_manager->add_setting( 'is_email_address', array(
             'default'        => 'contact@ishouvik.com',

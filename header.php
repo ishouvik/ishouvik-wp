@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div class="navbar navbar-inverse is-navbar-primary" role="navigation">
+    <div id="is-site-navbar-primary" class="navbar <?php is_site_primary_nav_class(); ?> is-navbar-primary" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ishouvik-navbar-collapse-primary">
@@ -50,4 +50,4 @@
         </div>
     <?php endif; ?>
 
-    <div class="container site-container clearfix">
+    <div id="is-site-body" class="container site-container clearfix">
